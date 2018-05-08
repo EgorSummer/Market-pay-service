@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Error</title>
+    <meta http-equiv="Content-type"
+    content="text/html" charset="UTF-8"/>
+  </head>
+  <body>
+    <p>Something go wrong</p>
+    {% if error_code %}
+      <p>Error code: {{error_code}}</p>
+    {% endif %}
+    {% if message %}
+      <p>{{message}}</p>
+    {% endif %}
+  </body>
+</html>

@@ -99,3 +99,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# other
+default_settings.py
