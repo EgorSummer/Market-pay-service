@@ -1,0 +1,12 @@
+
+body{
+	background:#8FBC8F;
+	color:#8B4513;
+	font-family:arial;
+    }
+.forma{
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+    }

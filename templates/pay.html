@@ -3,15 +3,18 @@
     <title>Pay service</title>
     <meta http-equiv="Content-type"
     content="text/html" charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
   </head>
   <body>
     <form name="Pay" method="post" action=" https://pay.piastrix.com/ru/pay" accept-charset="UTF-8">
-      <input type="hidden" name="amount" value={{_args["amount"]}} />
-      <input type="hidden" name="currency" value={{_args["currency"]}} />
-      <input type="hidden" name="shop_id" value={{_args["shop_id"]}} />
-      <input type="hidden" name="sign" value={{_args["sign"]}} />
-      <input type="hidden" name="shop_order_id" value={{_args["shop_order_id"]}} />
-      <input type="submit" name="description" value="Test invoice"/>
+      <div class="forma">
+        <input type="hidden" name="amount" value={{_args["amount"]}} />
+        <input type="hidden" name="currency" value={{_args["currency"]}} />
+        <input type="hidden" name="shop_id" value={{_args["shop_id"]}} />
+        <input type="hidden" name="sign" value={{_args["sign"]}} />
+        <input type="hidden" name="shop_order_id" value={{_args["shop_order_id"]}} />
+        <input type="submit" name="description" value="Test invoice"/>
+      </div>
   </form>
   </body>
 </html>

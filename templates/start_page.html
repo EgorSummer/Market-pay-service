@@ -3,22 +3,31 @@
     <title>Pay service</title>
     <meta http-equiv="Content-type"
     content="text/html" charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
   </head>
   <body>
     <form method="post" action="{{prefix}}/service" accept-charset="UTF-8">
-      <input type="text" name="amount" size="10"
-      maxlength="60" placeholder="Amount">
-      <select name="currency" size="1">
-        <option>EUR</option>
-        <option>USD</option>
-        <option>RUB</option>
-      </select>
-      <textarea 
-        rows="10" cols="60"
-        name="description" 
-        placeholder="Description">
-      </textarea>
-      <input type="submit" name="pay" value="Pay">
+      <div class="forma">
+        <div>
+          <input type="text" name="amount" size="10"
+          maxlength="60" placeholder="Amount">
+          <select name="currency" size="1">
+            <option>EUR</option>
+            <option>USD</option>
+            <option>RUB</option>
+          </select>
+        </div>
+        <div>
+          <textarea 
+            rows="10" cols="60"
+            name="description" 
+            placeholder="Description">
+          </textarea>
+        </div>
+        <div>
+          <input type="submit" name="pay" value="Pay">
+        </div>
+      </div>
     </form>
   </body>
 </html>

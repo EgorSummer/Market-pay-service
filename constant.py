@@ -27,4 +27,5 @@ REQUIRED_INVOICE_KEYS = [AMOUNT, CURRENCY, PAYWAY, SHOP_ID, SHOP_ORDER_ID]
 CURRENCY_VALUE = {RUB: 643, EUR: 978, USD: 840}
 URL_FOR_BILL = "https://core.piastrix.com/bill/create"
 URL_FOR_INVOICE = "https://core.piastrix.com/invoice/create"
+MESSAGE_AMOUNT_EMPTY = "The amount field can not be empty."
 
