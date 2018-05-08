@@ -1,0 +1,18 @@
+<html>
+  <head>
+     <title>Pay service</title>
+     <meta http-equiv="Content-type"
+       content="text/html" charset="UTF-8"/>
+  </head>
+  <body>
+    <form name="Invoice" method={{data['method']}} action={{data['url']}} accept-charset="UTF-8">
+      <input name="lang" value={{data["data"]["lang"]}} />
+      <input name="m_curorderid" value={{data["data"]["m_curorderid"]}} />
+      <input name="m_historyid" value={{data["data"]["m_historyid"]}} />
+      <input name="m_historytm" value={{data["data"]["m_historytm"]}} />
+      <input name="referer" value={{data["data"]["referer"]}} />
+      <input type="submit" name="description" value="Test invoice"/>
+    </form>
+  </body>
+ </html>
+
